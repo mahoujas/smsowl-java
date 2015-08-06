@@ -8,7 +8,7 @@
       </parent>
     <groupId>com.mahoujas.smsowl</groupId>
     <artifactId>smsowl-client</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Sms Owl Client Library</name>
     <description>This is Java wrapper for SmsOwl REST API</description>
