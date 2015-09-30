@@ -13,8 +13,8 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 public class SmsOwl {
 
-    private String accountId;
-    private String apiKey;
+    private final String accountId;
+    private final String apiKey;
     private final String url = "https://api.smsowl.in/v1/sms";
 
     public SmsOwl(String accountId,String apiKey){
@@ -31,6 +31,7 @@ public class SmsOwl {
         return sendPromotionalSms(senderId, to, message, SmsType.NORMAL);
     }
 
+    @SuppressWarnings( "deprecation" )
     public String sendPromotionalSms(String senderId,String to,String message,SmsType smsType) throws Exception{
         HttpClient httpClient = HttpClientBuilder.create().build();
         try{
@@ -58,6 +59,7 @@ public class SmsOwl {
         }
     }
 
+    @SuppressWarnings( "deprecation" )
     public String [] sendPromotionalSms(String senderId,String [] to,String message,SmsType smsType) throws Exception{
         HttpClient httpClient = HttpClientBuilder.create().build();
         try{
@@ -85,6 +87,7 @@ public class SmsOwl {
         }
     }
 
+    @SuppressWarnings( "deprecation" )
     public String sendTransactionalSms(String senderId,String to,String templateId,HashMap<String, String> placeholderMap) throws Exception{
         HttpClient httpClient = HttpClientBuilder.create().build();
         try{
