@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.jcabi</groupId>
         <artifactId>parent</artifactId>
-        <version>0.34</version>
+        <version>0.37</version>
       </parent>
     <groupId>com.mahoujas.smsowl</groupId>
     <artifactId>smsowl-client</artifactId>
